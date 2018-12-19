@@ -1,0 +1,97 @@
+
+    .CardGroup {
+        .ant-col-6 {
+            margin-top:10px !important;
+            .ant-card-body {
+                padding:16px;
+            }
+            p {
+                margin:4px 0px;
+            }
+            .code_desc {
+                height: 80px;
+                font-size: 15px;
+                position: relative;
+                padding-bottom: 16px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    height: 1px;
+                    border-bottom: 1px solid #e8e8e8;
+                    bottom: 0px;
+                    left: 0px;
+                    right: 0px;
+                    margin: 0px -16px;
+                }
+            }
+            .btn_group {
+                text-align: right;
+                >button {
+                    margin:0px 4px;
+                }
+            }
+        }
+    }
+.addCodePage {
+    height: 100%;
+    .codeContainer {
+        height: 100%;
+        position: relative;
+        border:1px solid #efefef;
+        >div {
+            display: inline-block;
+            h4 {
+                background: #eee;
+                padding:4px;
+                padding-left: 10px;
+                margin-bottom: 0px;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            &.leftInfo {
+                >div {
+                    >form {
+                        margin-top:28px;
+                        padding-left:15px;
+                        .ant-form-item {
+                            margin-bottom: 8px;
+                        }
+                    }
+                    &.setCodeContro {
+                        margin-top:28px;
+                    }
+                }
+                width:280px;
+                height: 100%;
+                border-right: 1px solid #efefef;
+                .btnGroup {
+                    margin-top:20px;
+                    text-align: center;
+                    >button {
+                        margin:0px 4px;
+                    }
+                    >button:first-child {
+                        &:not(.default){
+                            background: #f5222d !important;
+                            border-color:#f5222d !important;
+                        }
+                    }
+                }
+            }
+            &.rightCode {
+                position: absolute;
+                margin-left: 290px;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                >div {
+                    &.ace-editor {
+                        height: calc(100% - 29px);
+                    }
+                }
+            }
+        }
+    }
+}
